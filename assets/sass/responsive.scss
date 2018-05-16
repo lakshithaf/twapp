@@ -1,0 +1,62 @@
+@mixin calc($key, $value) 					{ #{$key}: -webkit-calc(#{$value}); #{$key}: -moz-calc(#{$value}); #{$key}: calc(#{$value}); }
+
+@media (max-width: 768px){
+
+	.header_bg 								{ background-size: cover;
+		.header_content 					{ width: 100%;
+			.header_content_inner  			{
+				h1 							{ font-size: 19px; }
+				button.backn, button.back	{ margin-top: 20px; font-size: 15px;  width: 30px; height: 30px; padding: 8px; }
+			}
+		}
+	}
+	.modal 									{ bottom: auto;}
+	.logout_confirm_box, .quit_test_msgbox, .confirm_box  { margin: 45% auto;
+	  .modal-content                        { border-radius: 5px;}
+	  .modal-dialog                         { }
+	  .modal-header                         { padding: 20px 15px; font-size: 18px; text-align: center; border-radius: 5px 5px 0px 0px;
+		.modal-title 						{ letter-spacing: 0.1rem;}
+	  }
+	  .modal-body                           { margin-bottom: 15px; margin-top: 10px; text-align: center;
+	    input.form-control                  { }
+	    .radio                              { }
+	    ul                                  {
+	      li                                { }
+	  }
+	  p                                     { line-height: 20px; letter-spacing: 0.1rem;}
+	}
+	.modal-footer                           { text-align: center;
+	    button.btn                          { font-size: 13px; height: 46px; width: 120px; letter-spacing: 0.1rem;}
+	    }
+	}
+}
+
+@media (min-width: 769px) and (max-width: 991px){
+
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1300px){
+
+
+}
+
+@media only screen and (min-width: 1400px) {
+	body 												{ background: #f5f5f5; }
+	.container 							 				{ width: 1200px; }
+	 #page                                          	{ width: 100%; @include calc(min-height, "100% - 0px"); }
+
+
+
+}
+
+@media only screen and (min-width: 1670px) {
+	body 												{ background: #f5f5f5; }
+	.container 							 				{ width: 1400px; }
+	 #page                                          	{ width: 100%; @include calc(min-height, "100% - 0px"); }
+
+
+
+}
+

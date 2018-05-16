@@ -1,0 +1,80 @@
+$icon-font-path: "/assets/fonts/bootstrap/";
+$fa-font-path: "/assets/fonts/font-awesome";
+$custom-icon-path: "/assets/fonts/custom";
+$image-path: "/assets/images/";
+$flag-icon-css-path: "/assets/flags" !default;
+$base_path: "/";
+
+$default_blue: #00aeed;
+$default_green: #00ae8d;
+$default_yellow: #f9bf51;
+$default_red: #ed4b49;
+$dark_blue: #014b70;
+$dark_yellow: #fe9935;
+$sign_up_box_color: #1e6980;
+$sign_up_button_color: #87ccba;
+$default_font_size: 14px;
+$default_gray: #999999;
+$default_light_gray: #e5e5e5;
+$box_height: 150px;
+$login_btn_color: #9ab7c5;
+
+@mixin boxShadow() {
+  -webkit-box-shadow: 1px 1px 18px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 18px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 18px -6px rgba(0, 0, 0, 0.75);
+}
+
+@mixin calc($key, $value) {
+  #{$key}: -webkit-calc(#{$value});
+  #{$key}: -moz-calc(#{$value});
+  #{$key}: calc(#{$value});
+}
+
+@mixin rotateAngle($angle) {
+  transform: rotate($angle);
+  -ms-transform: rotate($angle);
+  -webkit-transform: rotate($angle);
+  -o-transform: rotate($angle);
+  -moz-transform: rotate($angle);
+  transform-origin: center center;
+  -ms-transform-origin: center center;
+  -webkit-transform-origin: center center;
+  -o-transform-origin: center center;
+  -moz-transform-origin: center center;
+}
+
+@mixin transitionEffect($to,$duration,$type) {
+  -webkit-transition: $to $duration $type;
+  -moz-transition: $to $duration $type;
+  transition: $to $duration $type;
+}
+
+@mixin zoomScale($value) {
+  -webkit-transform: scale($value);
+  -ms-transform: scale($value);
+  -o-transform: scale($value);
+  transform: scale($value);
+}
+
+@mixin boxShadow() {
+  -webkit-box-shadow: 1px 1px 18px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 18px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 18px -6px rgba(0, 0, 0, 0.75);
+}
+
+@mixin sign_up_bg() {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#004c6e+0,31818c+100 */
+  background: #004c6e; /* Old browsers */
+  background: -moz-linear-gradient(top, #004c6e 0%, #31818c 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #004c6e 0%, #31818c 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #004c6e 0%, #31818c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#004c6e', endColorstr='#31818c', GradientType=0); /* IE6-9 */
+
+}
+
+.vwport {
+  width: 100%;
+  height: 100%;
+}
+

@@ -1,0 +1,39 @@
+
+*                                                   { margin: 0; padding: 0; outline: 0; letter-spacing: 0.03rem;  }
+html                                                { font-family: Montserrat-Regular; overflow-y: scroll; }
+html, body                                          { @extend .vwport; }
+body                                                { letter-spacing: 0.02rem; padding-right: 0 !important;  }
+h1                                                  { font-size: $default_font_size+16; }
+h2                                                  { font-size: $default_font_size*2; }
+h3                                                  { font-size: $default_font_size+5;  }
+i, em                                               { font-style: italic;}
+h1                                                  { text-align: center; color: $dark_blue; margin-bottom: 25px; }
+
+.container-fluid                                    {padding-right: 15px;padding-left: 15px;margin-right: auto;margin-left: auto;}
+.container                                          {padding-right: 15px;padding-left: 15px;margin-right: auto;margin-left: auto;}
+.alert 												{ font-size: $default_font_size - 1;   border-radius: 0;  line-height: 15px;  right: 15px !important;
+  span[data-notify="message"] 					{
+    i.fa 										{ font-size: 28px; position: absolute; }
+    p 											{ padding-left: 0px; }
+  }
+  &.alert-success 								{ background: #eee; color: $dark_blue; border: 1px #f0c36d solid; position: fixed !important; width: 320px;
+    background-color: #f9edbe }
+}
+.custom-hover                         {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-transition-property: transform;
+  transition-property: transform
+}
+.custom-hover:active,
+.custom-hover:focus,
+.custom-hover:hover {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03)
+}
+
